@@ -1,11 +1,3 @@
-/*
- * grunt-filerev-usemin
- * https://github.com/Lanfei/grunt-filerev-usemin
- *
- * Copyright (c) 2015 Lanfei
- * Licensed under the MIT license.
- */
-
 'use strict';
 
 module.exports = function(grunt) {
