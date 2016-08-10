@@ -1,4 +1,36 @@
 {
   "name": "grunt-filerev-simple-replace",
   "description": "Replace references to grunt-filerev files.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/Lanfei/grunt-filerev-simple-replace",
+  "author": {
+    "name": "amirhossein693",
+    "email": "amirhossein693@gmail.com",
+    "url": "http://amirhossein.me"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/amirhossein693/grunt-filerev-simple-replace.git"
+  },
+  "bugs": {
+    "url": "https://github.com/amirhossein693/grunt-filerev-simple-replace/issues"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.9.2",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt": "~0.4.5"
+  },
+  "peerDependencies": {
+    "grunt": ">=0.4.0"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
 }
