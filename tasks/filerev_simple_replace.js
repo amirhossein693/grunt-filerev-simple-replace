@@ -17,7 +17,8 @@ module.exports = function (grunt) {
 
     // Merge task-specific and/or target-specific options with these defaults.
     var options = this.options({
-      root: '.'
+      root: '.',
+      basePath: null
     });
     var summary = grunt.filerev.summary;
 
@@ -26,6 +27,7 @@ module.exports = function (grunt) {
       // Process the root dir.
       var root = options.root;
       var orig = filePair.orig;
+      var basePath = options.basePath;
       var cwd = '';
       if (orig.expand && orig.cwd) {
         cwd = orig.cwd;
@@ -59,6 +61,11 @@ module.exports = function (grunt) {
           var result = summary[relativePath];
           if (result) {
             result = path.relative(referenceDir, result);
+            if (basePath != null) {
+              result = path.resolve(basePath, result)
+            } else {
+              result = path.relative(referenceDir, result);
+            }
             grunt.log.writeln('  ' + $2 + ' ==> '.grey + result);
 
             return $1 + result + $3;
