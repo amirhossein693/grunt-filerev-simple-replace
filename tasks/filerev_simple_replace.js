@@ -1,11 +1,3 @@
-/*
- * grunt-filerev-usemin
- * https://github.com/Lanfei/grunt-filerev-usemin
- *
- * Copyright (c) 2015 Lanfei
- * Licensed under the MIT license.
- */
-
 'use strict';
 
 var path = require('path');
@@ -18,7 +10,7 @@ module.exports = function (grunt) {
   // Please see the Grunt documentation for more information regarding task
   // creation: http://gruntjs.com/creating-tasks
 
-  grunt.registerMultiTask('filerev_usemin', 'Replace references to grunt-rev files.', function () {
+  grunt.registerMultiTask('filerev_simple_replace', 'Replace references to grunt-rev files.', function () {
     if (!grunt.filerev || !grunt.filerev.summary) {
       throw new Error('Grunt task `filerev` is required.');
     }
