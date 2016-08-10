@@ -1,4 +1,4 @@
-# grunt-filerev-usemin [![NPM version][npm-image]][npm-url]
+# grunt-filerev-simple-replace
 
 > Replace references to grunt-filerev files.
 
